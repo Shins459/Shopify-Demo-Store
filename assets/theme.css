@@ -7005,7 +7005,7 @@ hr {
   }
 
   .product-form__cart-submit:hover{
-    background-color:blue !important;
+    background-color:white !important;
     border:2px solid orange !important;
     color:green !important;
   }
