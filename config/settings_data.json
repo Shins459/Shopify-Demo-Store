@@ -230,7 +230,6 @@
     },
     "content_for_index": [
       "hero-1",
-      "feature-row",
       "feature-columns",
       "collection",
       "hero-2",
