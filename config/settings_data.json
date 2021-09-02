@@ -249,8 +249,8 @@
         "type": "featured-collection",
         "settings": {
           "title": "Featured Collection",
-          "collection": "",
-          "grid": 3,
+          "collection": "dream-home",
+          "grid": 4,
           "rows": 2,
           "show_vendor": false,
           "show_view_all": false
