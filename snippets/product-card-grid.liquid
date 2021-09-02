@@ -47,3 +47,31 @@
   {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
 
 </div>
+
+<script>
+  function clickHandler(p){
+    let formData = {
+      'items': [{
+        'id': p,
+        'quantity': 1
+      }]
+    };
+
+    fetch('/cart/add.js', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      return response.json();
+    })
+    .catch(error) => {
+      console.error('Error:', error);
+    });
+}
+
+</script>
+
+<button type="button" onClick="clickHandler({{product.variants.first.id}})" class="btn-product-form_cart-submit btn--secondary btn-lg>Add To Cart</buttom>
