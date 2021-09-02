@@ -244,16 +244,27 @@
           "button_label": "",
           "button_link": ""
         }
+      },
+      "1630585782ac878d88": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Featured Collection",
+          "collection": "",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
       }
     },
     "content_for_index": [
       "hero-1",
       "1630481798b141a3a4",
       "feature-columns",
-      "collection",
       "hero-2",
       "quotes",
-      "image-bar"
+      "image-bar",
+      "1630585782ac878d88"
     ]
   },
   "presets": {
