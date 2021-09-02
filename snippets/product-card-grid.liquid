@@ -49,10 +49,10 @@
 </div>
 
 <script>
-  function clickHandler(p){
+  function addToCart(prod){
     let formData = {
  'items': [{
-  'id': p,
+  'id': prod,
   'quantity': 1
   }]
 };
@@ -75,4 +75,4 @@ fetch('/cart/add.js', {
 
 </script>
 
-<button type="button" onclick="clickHandler({{product.variants.first.id}})" class="btn product-form__cart-submit btn--secondary-accent">Add To Cart</button>
+<button type="button" onclick="addToCart({{product.variants.first.id}})" class="btn product-form__cart-submit btn--secondary-accent">Add To Cart</button>
