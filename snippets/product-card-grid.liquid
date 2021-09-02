@@ -51,26 +51,27 @@
 <script>
   function clickHandler(p){
     let formData = {
-      'items': [{
-        'id': p,
-        'quantity': 1
-      }]
-    };
+ 'items': [{
+  'id': p,
+  'quantity': 1
+  }]
+};
 
-    .fetch('/cart/add.js', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-    .then(response => {
-      return response.json();
-    })
-    .catch(error) => {
-      console.error('Error:', error);
-    });
-}
+fetch('/cart/add.js', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify(formData)
+})
+.then(response => {
+  return response.json();
+})
+.catch((error) => {
+  console.error('Error:', error);
+});
+    
+   
 
 </script>
 
